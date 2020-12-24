@@ -641,7 +641,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/http.js");
 // Author - Tejashri Joshi
 // Date - 10-15-2020
-// This file contains the call to the REST APIs developed in python 
+// This file contains the call to the REST APIs developed in python
 
 
 
@@ -650,14 +650,14 @@ class VnfService {
         this.httpClient = httpClient;
     }
     getVnfs() {
-        return this.httpClient.get('http://localhost:5000/VNF');
+        return this.httpClient.get('http://0.0.0.0:5000/VNF');
     }
     getAllQoS(scenario) {
-        return this.httpClient.get('http://localhost:5000/QoS/' + scenario);
+        return this.httpClient.get('http://0.0.0.0:5000/QoS/' + scenario);
     }
     postVnfData(vnfQoS) {
         //const httpHeaders = new HttpHeaders({'Content-Type': 'application/json'});
-        return this.httpClient.post('http://localhost:5000/perfScore', vnfQoS); //,{headers:httpHeaders});
+        return this.httpClient.post('http://0.0.0.0:5000/perfScore', vnfQoS); //,{headers:httpHeaders});
     }
 }
 VnfService.ɵfac = function VnfService_Factory(t) { return new (t || VnfService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"])); };
@@ -733,7 +733,7 @@ _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["platformBrowser"]().boot
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Teju\Documents\Teju\TEJU MS\Capstone project\code\UCNFV\Angular\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\Teju\Documents\Teju\TEJU MS\Capstone project\finalcode\UCNFV\Angular\src\main.ts */"./src/main.ts");
 
 
 /***/ })

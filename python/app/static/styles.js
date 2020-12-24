@@ -439,7 +439,7 @@ module.exports = content.locals || {};
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Teju\Documents\Teju\TEJU MS\Capstone project\code\UCNFV\Angular\src\styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! C:\Users\Teju\Documents\Teju\TEJU MS\Capstone project\finalcode\UCNFV\Angular\src\styles.css */"./src/styles.css");
 
 
 /***/ })
