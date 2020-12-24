@@ -650,14 +650,14 @@ class VnfService {
         this.httpClient = httpClient;
     }
     getVnfs() {
-        return this.httpClient.get('http://0.0.0.0:5000/VNF');
+        return this.httpClient.get('http://146.148.68.205:5000/VNF');
     }
     getAllQoS(scenario) {
-        return this.httpClient.get('http://0.0.0.0:5000/QoS/' + scenario);
+        return this.httpClient.get('http://146.148.68.205:5000/QoS/' + scenario);
     }
     postVnfData(vnfQoS) {
         //const httpHeaders = new HttpHeaders({'Content-Type': 'application/json'});
-        return this.httpClient.post('http://0.0.0.0:5000/perfScore', vnfQoS); //,{headers:httpHeaders});
+        return this.httpClient.post('http://146.148.68.205:5000/perfScore', vnfQoS); //,{headers:httpHeaders});
     }
 }
 VnfService.ɵfac = function VnfService_Factory(t) { return new (t || VnfService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"])); };
