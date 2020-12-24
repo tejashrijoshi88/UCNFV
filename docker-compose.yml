@@ -1,0 +1,28 @@
+version: "2"
+services:
+  mysql:
+    image: mysql:5.7
+    ports:
+     - "32000:3306"
+    environment: 
+     MYSQL_ROOT_PASSWORD: Teju@2019
+    volumes:
+     - ./db:/docker-entrypoint-initdb.d/:ro
+  app:
+    build: ./python/app
+    links:
+     - mysql
+    ports:
+     - "5000:5000"
+    env_file: ./python/database.conf
+  ClientApp:
+    build: ./Angular
+    links:
+      - mysql
+      - app
+    volumes:
+      - './Angular:/app'
+      - '/app/node_modules'
+    ports:
+      - '4200:4200'
+

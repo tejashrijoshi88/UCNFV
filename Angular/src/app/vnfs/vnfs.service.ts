@@ -11,14 +11,14 @@ export class VnfService {
 
   constructor(private httpClient:HttpClient) { }
   getVnfs(){
-    return this.httpClient.get('http://146.148.68.205:5000/VNF');
+    return this.httpClient.get('http://localhost:5000/VNF');
   }
   getAllQoS(scenario){
-    return this.httpClient.get('http://146.148.68.205:5000/QoS/'+scenario);
+    return this.httpClient.get('http://localhost:5000/QoS/'+scenario);
   }
   postVnfData(vnfQoS){
     //const httpHeaders = new HttpHeaders({'Content-Type': 'application/json'});
-    return this.httpClient.post('http://146.148.68.205:5000/perfScore',vnfQoS);//,{headers:httpHeaders});
+    return this.httpClient.post('http://localhost:5000/perfScore',vnfQoS);//,{headers:httpHeaders});
   }
 }
 
