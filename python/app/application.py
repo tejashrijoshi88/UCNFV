@@ -27,6 +27,7 @@ def GetVNFs():
 def GetVNF():
     NFVVNFs=get_nfvsupportedvnfs()
     response=jsonify({"vnf":sorted(NFVVNFs,key=str.lower,reverse=True)})
+    response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
 # returns performance score for the selcted service provider and VNF
@@ -35,6 +36,7 @@ def parse_data():
       rank = handlemultipleVnfs(request.form)
       print(rank)
       response= jsonify({"success": True, "name": rank})
+      response.headers.add('Access-Control-Allow-Origin', '*')
       return response
 # return the QoS weights for provided scenario
 @app.route("/QoS/<Scenario>", methods=['GET'])
@@ -65,6 +67,7 @@ def get_all_qos(Scenario):
           QoS_values.append(0)
     print(QoS_values)
     response=jsonify({"name":QoS_names,"value":QoS_values})
+    response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
 if __name__ =="__main__":

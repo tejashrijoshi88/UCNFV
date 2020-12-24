@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="27a2e993-13ef-4d58-8d6f-81046081cda3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/src/app/vnfs/vnfs.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Angular/src/app/vnfs/vnfs.service.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
